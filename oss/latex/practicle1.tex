@@ -1,0 +1,93 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\title{Open Source Software Lab-1}
+
+\author{Introduction to LaTeX}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{List the use of 10 common tags in LaTeX.}
+\label{sec:introduction}
+
+\begin{description}
+\item[begin{document}]: Starts the actual text of a document. It is used in every document. Every begin tag should have a corresponding end tag.
+\item[begin{enumerate}]: Starts a numbered list.
+\item[begin{itemize}]: Starts a bullet list. 
+\item[begin{description}]: Starts a description. Generally used when describing some attributes or definitions.
+\item[dots]: Outputs three dots like ... Used to show a sequence or a finite number of terms.
+\item[begin{bibliography}]: Creates a bibliography.
+\item[usepackage]: Used for importing packages that are predefined.
+\item[frac]: Used to write fractions in LaTeX.
+\item[int]: Used to write integrals in LaTeX.
+\item[textbf,textit]: Used to make the text in bold and italics respectively.
+\end{description}
+
+\section{Explain Version Control in LaTeX.}
+\label{sec:theory}
+Version Control
+
+
+\section{Explain adding collaborators in LaTeX.}
+
+\section{Creating Tables in LaTeX.}
+
+Use the table and tabular commands for basic tables. For example :-
+
+\begin{table}
+\centering
+\begin{tabular}{l|r}
+Item & Quantity \\\hline
+Widgets & 42 \\
+Gadgets & 14
+\end{tabular}
+\caption{\label{tab:widgets}Table showing Items and Quantity.}
+\end{table}
+
+
+\section{How to Write Mathematical equations in LaTeX.}
+
+\LaTeX{} is great at typesetting mathematics.
+\begin{equation}
+    \int_1^2\frac{1}{x}=log_e2
+\end{equation}
+   If f(x) = log(x) then
+\begin{equation}
+    \frac{d}{dx}f(x) = \frac{1}{x}
+\end{equation}
+
+\section{Inserting figures in LaTeX.}
+
+First you have to upload the image file (jpeg, png or pdf) from your computer to writeLaTeX using the upload link the project menu. Then use the includegraphics command to include it in your document. Use the figure environment and the caption command to add a number and a caption to your figure. See the code for Figure \ref{fig:frog} in this section for an example.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.3\textwidth]{frog.jpg}
+\caption{\label{fig:frog}This frog was uploaded to writeLaTeX via the project menu.}
+\end{figure}
+
+\section{Creating Glossary in LaTeX.}
+
+\section{Creating Table of Contents and list of figures.}
+
+\section{Creating a bibliography in LaTeX.}
+
+\begin{bibliography}{9}
+\boldsymbol{References}
+\bibitem{nano3}
+Open Source Software Lab \newline
+\emph Veermata Jijabai Technological Institute \newline
+S.Y.B.Tech Information Technology
+
+\end{bibliography}
+
+
+\end{document}
